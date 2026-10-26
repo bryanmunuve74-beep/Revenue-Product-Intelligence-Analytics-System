@@ -1,0 +1,47 @@
+PROJECT 2 SYNTHETIC DATASET SUMMARY
+===================================
+Time window: 2026-04-26T10:53:24.524656+03:00 to 2026-10-26T10:53:24.524656+03:00
+Sessions: 10,000
+Events: 18,900
+Orders: 888
+Distinct synthetic client IDs: 7,293
+Sessions with checkout: 1,106
+Payment initiations: 888
+Successful orders: 595
+Successful revenue (KES): 2,759,290
+Successful-order AOV (KES): 4,637.46
+
+Sessions by source/medium:
+  - facebook/paid_social: 3,360
+  - google/organic: 1,868
+  - direct/none: 1,391
+  - google/cpc: 1,374
+  - newsletter/email: 789
+  - partner_referral/referral: 716
+  - linkedin/paid_social: 502
+
+Event counts:
+  - page_view: 16,029
+  - begin_checkout: 1,106
+  - payment_initiated: 888
+  - payment_succeeded: 595
+  - payment_failed: 243
+  - checkout_error: 39
+
+Order status counts:
+  - SUCCESS: 595
+  - FAILED: 243
+  - PENDING: 50
+
+Failure outcomes:
+  - Request cancelled by user: 89
+  - Insufficient funds: 64
+  - Payment request timed out or user did not respond: 54
+  - Payment processing error: 36
+
+IMPORTANT NOTES:
+- All data is synthetic.
+- Do not send the data to GA4 or M-Pesa.
+- Phone numbers appear only in orders.csv.
+- Event properties are JSON strings.
+- Import sessions first, orders second, and events third.
