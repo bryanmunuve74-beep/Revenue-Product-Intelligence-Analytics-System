@@ -1,12 +1,13 @@
-# Python
 __pycache__/
-*.pyc
+*.py[cod]
+.pytest_cache/
 .venv/
 venv/
-
-# Node
+.env
 node_modules/
-
-# OS & IDE
 .DS_Store
 .vscode/
+.idea/
+analysis/output/
+data/*.csv
+data/dataset_summary.txt

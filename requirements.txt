@@ -1,7 +1,9 @@
-faker
-numpy
-pandas
-streamlit
-plotly
-sqlalchemy
-pg8000
+Faker>=30,<40
+numpy>=1.26,<3
+pandas>=2.1,<4
+python-dotenv>=1.0,<2
+SQLAlchemy>=2.0,<3
+pg8000>=1.30,<2
+streamlit>=1.38,<2
+plotly>=5.24,<7
+pytest>=8,<9

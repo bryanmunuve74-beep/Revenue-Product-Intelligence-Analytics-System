@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: project2-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-p2_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-p2_dev_only_password}
+      POSTGRES_DB: ${POSTGRES_DB:-project2_analytics}
+    ports:
+      - "${HOST_DB_PORT:-5433}:5432"
+    volumes:
+      - project2_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-p2_user} -d ${POSTGRES_DB:-project2_analytics}"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+volumes:
+  project2_postgres_data:
