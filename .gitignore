@@ -1,13 +1,12 @@
-# Python cache & environment
+# Python
 __pycache__/
-*.py[cod]
+*.pyc
 .venv/
 venv/
-env/
 
-# Editor & IDE settings
+# Node
+node_modules/
+
+# OS & IDE
+.DS_Store
 .vscode/
-.idea/
-
-# Environment variables & secrets
-.env

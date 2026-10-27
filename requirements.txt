@@ -1,5 +1,7 @@
-streamlit
+faker
+numpy
 pandas
+streamlit
 plotly
 sqlalchemy
 pg8000
